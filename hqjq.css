@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: thistle;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.container div{
+    background-color: tomato;
+    width: 80%;
+    margin: 10px 10% 10px 10%;
+    height: 200px;
+}
+#photo{
+    margin: 1px 80% 10px 10%;
+    background-color: rgb(233, 235, 238);
+    color:  #90949c;
+    font-weight: bold;
+}
+#post{
+    margin: 1px 10% 10px 10%;
+    width: 80%;
+    background-color: #9cb4d8;
+    color: #fff;
+    font-weight: bold;
+}

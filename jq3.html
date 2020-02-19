@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("#in1").keydown(function(event){
+   $("#d1").html("Key: " + event.which);
+  // let x = document.getElementById("in1").value;
+  // console.log(x);
+   if(event.which==13){
+    // $("#d1").html($(x);
+    $("#d1").html($('#in1').val());
+   }
+ });
+});
+</script>
+</head>
+<body>
+ Enter : <input id="in1" type="text" value="fgfhgjh">
+<div id="d1">D1</div>
+<div id="d2"></div>
+
+</body>
+</html>
+

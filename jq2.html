@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("#in1").keypress(function(event){
+   $("#d1").html("Key: " + event.which);
+   console.log(event.which);
+   console.log(typeof event.which);
+   if(event.which==13){
+       console.log('I get it');
+       this.value = '';
+    // document.getElementById('myInput').value='';
+   }
+ });
+});
+</script>
+</head>
+<body>
+ Enter : <input id="in1" type="text">
+<div id="d1">D1</div>
+
+</body>
+</html>
+

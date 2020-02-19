@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="/jquery-3.4.1.min.js">
+</script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        var counter =0;
+        $("p").hide(1000);
+        alert(`element #test is now hidden`);
+        counter++;
+    });
+    $("#show").click(function(){
+        $("p").show(1000);
+        console.log(counter);
+    });
+});
+</script>
+</head>
+<body>
+    
+    <p>If you click on the "Hide" button, I will disappear. </p>
+    <p>(｡◕‿‿◕｡) </p>
+    <p>\ (•◡•) /</p>
+    <p>(｡◕‿◕｡)</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</body>
+</html>

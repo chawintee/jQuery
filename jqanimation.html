@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/jqanimation.css">
+    <title>jQuery animation</title>
+    <script src="/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".container").animate({
+                    left: "170px",
+                    opacity: '0.5'
+                });
+
+                $(".item1").animate({
+                    fontSize : "3em"
+            });
+
+        });
+        });
+    </script>
+</head>
+
+<body>
+    <button>Start animation</button>
+
+
+    <div class="container">
+        <div class="item1">Chawintee</div>
+    </div>
+</body>
+
+</html>
